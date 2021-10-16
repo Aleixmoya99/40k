@@ -1,0 +1,72 @@
+.list {
+  &__filters {
+    @include flex-align--center-justify-beetwen;
+    padding: 1rem 0 1.8rem;
+  }
+
+  &__filerIcon {
+    cursor: pointer;
+    transform: rotate(360deg);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    color: #637381;
+  }
+
+  &__head {
+    @include flex-align--center-justify-beetwen;
+    background-color: #ebeef1;
+    padding: 1.4rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  &__hiddenOverflowList{
+    overflow: hidden
+  }
+  &__overflowList{
+    overflow: auto;
+  }
+
+  &__itemName {
+    font-weight: bold;
+    color: rgb(33, 43, 54);
+  }
+  &__simpleRow{
+    width: 90%;
+    @include flex-justify-beetwen;
+    flex-direction: row;
+  }
+  &__simpleSmallRow{
+    width: 20%;
+    @include flex-justify-beetwen;
+    flex-direction: row;
+  }
+  &__simpleRowItem{
+    @include notification;
+    color: #ff4842;
+    background-color: #ff484226;
+  }
+  
+  
+  &__row {
+    cursor: pointer;
+    @include flex-align--center-justify-beetwen;
+    padding: 1.3rem 0.5rem;
+    transition: 0.6s;
+    text-decoration: none;
+    color: $color-body;
+  }
+
+  &__row:hover {
+    background-color: #f3f3f3;
+    border-radius: 6px;
+  }
+
+  &__label {
+    flex: 0 0 20%;
+    @include flex-align--center;
+  }
+}

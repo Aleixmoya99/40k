@@ -1,0 +1,51 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fafafa;
+
+    &__items{
+        @include flex-align--center-justify-beetwen;
+        min-height: 60px;
+    }
+    &__userIcon{
+        height: 50px;
+        width: 50px;
+        transform: scale(0.6);
+    }
+    &__notificationIcon{
+        height: 50px;
+        width: 50px;
+        transform: scale(0.5);
+    }
+    &__navbar {
+        @include flex-align--center;
+    }
+    &__account {
+        cursor: pointer;
+        @include flex-align--center;
+        margin-left: 1.2rem;
+    }
+    &__menu {
+        @include flex-align--center;
+        flex-direction: column;
+    }
+    &__hidden{
+        display: none;
+    }
+    &__dropDown{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        z-index: 4;
+        position: absolute;
+    }
+    &__dropDownText{
+        cursor: pointer;
+        text-decoration: none;
+        color: #76a1a8;
+    }
+    &__dropDownText:hover{
+        transition: color .3s cubic-bezier(0.23, 1, 0.32, 1);
+        color:#637381;
+    }
+}

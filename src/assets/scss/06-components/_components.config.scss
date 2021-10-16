@@ -1,0 +1,44 @@
+.config{
+    &__formContainer{
+        @include flex-justify-around;
+        flex-direction: row;
+    }
+    &__textContainer{
+        @include flex-align--center-justify-beetwen;
+        flex-direction: row;
+        max-width: 25rem;
+    }
+    &__column{
+        margin-left: 2rem;
+        flex: 1 0 45%;
+    }
+    &__atribute{
+        &--text{
+            margin-top: 1.2rem;
+            margin-left: 0.5rem;
+        }
+        &--title{
+            margin-left: 1rem;
+            font-size: 16px;
+        }
+    }
+    &__buttonContainer{
+        @include flex-align--center-justify-beetwen;
+        flex-direction: row;
+        max-width: 20rem;
+    }
+    &__listItem{
+        flex: 1 0 12%;
+    }
+    &__button{
+        border-radius: 5px;
+        margin-left: 1rem;
+        width: 5rem;
+    }
+    &__addButton{
+        border-radius: 5px;
+        width: 5rem;
+        margin-left:20rem;
+        display:block;
+    }
+}

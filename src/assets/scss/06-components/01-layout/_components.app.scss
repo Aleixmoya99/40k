@@ -1,0 +1,12 @@
+.app{
+    @include flex;
+
+    &__content{
+        flex: 1 0 85%;
+    }
+    &__navegation{
+        flex: 1 0 15%;
+        position: sticky;
+        top: 0;
+    }
+}

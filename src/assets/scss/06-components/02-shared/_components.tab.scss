@@ -1,0 +1,46 @@
+.tab{
+    &__hidden{
+        display: none
+    }
+    &__headItem{
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    }
+    &__rowTab{
+        cursor: pointer;
+        @include flex-align--center;
+        flex-direction: row;
+        text-decoration: none;
+    }
+    &__row{
+        @include flex-justify-beetwen;
+        padding: 1.3rem 0.5rem;
+        transition: 0.6s;
+        text-decoration: none;
+    }
+    &__active{
+        background-color: #76a1a846;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: $color-primary;
+    }
+    &__column{
+        @include flex-align--center-justify-beetwen;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    &__singleBox{
+        flex: 1;
+    }
+    &__box{
+        margin-top: 1rem !important;
+        flex: 0 0 32%;
+        min-height: 13rem;
+    }
+    &__graphBox{
+        margin-top: 1rem !important;
+        flex: 0 0 32%;
+        min-height: 20rem;
+    }
+}

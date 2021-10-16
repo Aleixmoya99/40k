@@ -1,0 +1,76 @@
+@mixin Button{
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.6s;
+}
+.button {
+  &--primary {
+    @include Button;
+    border: 2px solid $color-primary;
+    background: $color-primary;
+    color: white;
+    transition: 0.6s;
+  }
+
+  &--primary:hover {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+    background: white;
+  }
+
+  &--primary--xs {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border: 2px solid $color-primary;
+    background: $color-primary;
+    color: white;
+    transition: 0.6s;
+  }
+  &--primary--xs:hover {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+    background: white;
+  }
+
+  &--primary--s {
+    @include Button;
+    padding: 1rem 1.3rem;
+    font-size: 0.9rem;
+    border: 2px solid $color-primary;
+    background: $color-primary;
+    color: white;
+    transition: 0.6s;
+  }
+  &--primary--s:hover {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+    background: white;
+  }
+
+  &--secondary--xs {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border: 2px solid $color-body;
+    background: $color-body;
+    border-radius: 0.5rem;
+    color: white;
+    transition: 0.6s;
+  }
+  &--secondary--xs:hover {
+    border: 2px solid $color-body;
+    color: $color-body;
+    font-weight: bold;
+    background: white;
+  }
+
+  &--xs {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+}
+

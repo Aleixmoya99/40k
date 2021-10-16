@@ -1,0 +1,25 @@
+@mixin tag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.stateTag {
+  &--active {
+    @include tag;
+    color: #229a16;
+    background-color: rgba(84, 214, 44, .16);
+  }
+  &--disabled {
+    @include tag;
+    color: rgb(99 115 129);
+    background-color: rgb(145 158 171 / 24%);
+  }
+  &--suspended {
+    @include tag;
+    color: #ff4842;
+    background-color: #ff484226;
+  }
+}

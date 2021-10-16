@@ -1,0 +1,7 @@
+.pageHeader {
+  margin-top: 6rem;
+  
+  &__caption {
+    @include flex-align--center-justify-beetwen;
+  }
+}

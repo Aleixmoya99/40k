@@ -1,0 +1,21 @@
+@mixin notification {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 0;
+
+  }
+.notifications{
+
+    &__hidden{
+        display: none
+    }
+    &__error{
+        @include notification;
+        color: #ff4842;
+        background-color: #ff484226;
+    }
+}
